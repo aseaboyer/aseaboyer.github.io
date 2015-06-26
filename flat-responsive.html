@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+<style>
+body {
+	font-family:'Open Sans', sans-serif;
+	margin:0;
+	padding:0;
+}
+#content {
+	background-color:#ededed;
+	margin:50px 0 0 0;
+	max-width:100%;
+		
+	display:flex;
+	flex-direction:column;
+}
+
+h1 {
+	margin:0;
+	min-height:50px;
+	padding:0;
+}
+header {
+	background-color:#dedede;
+	margin:0;
+	padding:0;
+	position:fixed;
+	order:1;
+	top:0;
+	width:100%;
+}
+header #MenuToggle {
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+header #MenuToggle:hover {
+	background-color:#678;
+}
+header .nav {
+	display:block;
+	height:0;
+	overflow:hidden;
+	/*transition:height 250ms;*/
+}
+
+nav {
+	text-align:center;
+}
+nav .list-group {
+	
+}
+nav a.list-group-item {
+	display:block;
+	text-decoration:none;
+}
+
+header ul {
+	background-color:#fff;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+body.menuOpen header .nav {
+	height:100%;
+}
+body.menuOpen header ul {
+	background-color:#678;
+}
+header ul li {
+	border-bottom:1px dotted #666;
+}
+header ul li a {
+	text-decoration:none;
+}
+
+article {
+	background-color:#fcfcfc;
+	width:100%;
+	order:2;
+}
+section {
+	border-bottom:1px solid #999;
+	margin:0 30px 0 30px;
+	padding:0;
+	min-height:100px;
+}
+
+footer {
+	background-color:#ccc;
+}
+
+@media (min-width: 600px) {
+
+	#content {
+		flex-direction:row;
+		margin:0 auto;
+		max-width:1100px;
+	}
+	
+	header {
+		flex:2;
+		min-width:230px;
+		order:1;
+		position:relative;
+	}
+	nav {
+		position:fixed;
+		text-align:left;
+	}
+	header .nav {
+		height:100%;
+	}
+	header #MenuToggle {
+		display:none;
+	}
+	article {
+		flex:5;
+		order:2;
+	}
+	
+	footer {
+		bottom:0;
+		position:fixed;
+		text-align:center;
+		width:100%;
+	}
+}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
+
+		var menuToggle = document.getElementById( 'MenuToggle' );
+		console.log(menuToggle);
+		menuToggle.addEventListener("click", function () {
+			document.body.classList.toggle( "menuOpen" );
+		}, false);
+
+	});
+</script>
+</head>
+<body>
+<div id="content">
+<article>
+	<section id="resume">
+		<h2>objective</h2>
+
+		<p>Create websites, browser-based applications, and interactive assets with special attention to usability and performance with the goal of creating engaging experiences.</p>
+
+		<h2>experience</h2>
+
+		<p>My experience includes:</p>
+
+		<ul>
+			<li>a BA in Web Design and Interactive Media</li>
+			<li>eight years experience in the Web Development Industry</li>
+			<li>experience leading and managing teams</li>
+			<li>highly proficient with: HTML5, CSS3, Javascript, Jquery, PHP, Photoshop, WebGL, Drupal</li>
+			<li>experience building custom content management systems in order to simplify and improve client workflows</li>
+			<li>excellent planning and communication skills</li>
+		</ul>
+
+		<h2>employment history</h2>
+
+		<p><strong>Intrax, San Francisco, CA Web Developer, 2013 - 2014</strong></p>
+
+		<p>Work with a growing team to:</p>
+
+		<ul>
+			<li>create highly customized, yet flexible javascript and jquery features to meet site needs</li>
+			<li>develop and extend Drupal modules</li>
+			<li>update and maintain content within Drupal</li>
+			<li>architect and develop application connections, such as Salesforce to Drupal</li>
+		</ul>
+
+		<p><strong>Pointroll, Boston, MA HTML5 Developer, 2013</strong></p>
+
+		<p>Worked with a small startup team to:</p>
+
+		<ul>
+			<li>maintain a PHP/Javascript codebase which dynamically converts user-created Flash assets into HTML5 compositions</li>
+			<li>create animations and effects which mimic Flash tweening and effects</li>
+		</ul>
+
+		<p><strong>Northeastern University, edtech, Boston, MA Internet Systems Developer, 2010 - 2012</strong></p>
+
+		<p>Worked with a small team to test and provide classroom technology for teachers and students to:</p>
+
+		<ul>
+			<li>build, upgrade, and maintain custom content management systems for grant-funded projects</li>
+			<li>manage website and content updates in Wordpress</li>
+			<li>design, build, and implement Wordpress plug-ins</li>
+		</ul>
+
+		<p><strong>Boston College, Office of Marketing Communications, Chestnut Hill, MA Web Developer, 2007 - 2010</strong></p>
+
+		<p>Worked with a team on a wide range of projects including:</p>
+
+		<ul>
+			<li>manage content across several school's sites within the university</li>
+			<li>develop and deploy HTML email flyers and marketing campaigns</li>
+			<li>design, build, and deploy a content management system, allowing customers to create their own rich HTML Newsletters</li>
+			<li>design, develop, and implement forms and supplemental web pages associated with large scale email marketing campaigns</li>
+			<li>manage content and functionality updates in multiple content management systems, including: Wordpress, Campaign monitor, and Serena Collage</li>
+		</ul>
+
+		<p><strong>Big Fish Communications, Brookline, MA Lead Web Developer, 2005 - 2007</strong></p>
+
+		<p>Worked with a marketing team to:</p>
+
+		<ul>
+			<li>manage, hire, and mentor a group of talented employees and interns</li>
+			<li>design, develop, and deploy websites for a wide range of companies in the technology sector</li>
+			<li>work closely with clients to assess their needs and the needs of their target audiences</li>
+			<li>evaluate emerging web technologies to provide clients with the widest array of effective solutions</li>
+		</ul>
+
+		<h2>education</h2>
+
+		<p><strong>The New England Institute of Art, Brookline, MA BA, Web Design and Interactive Media, 2007</strong></p>
+
+		<ul>
+			<li>studied web design and graphic design standards</li>
+			<li>learned modern programming methods associated with web development</li>
+			<li>explored 2-D and 3-D animation practices and fundamentals</li>
+		</ul>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		<h3>Human Trafficking Data Collection & Reporting Project</h3>
+		<p>The Human Trafficking Data Collection & Reporting Project was developed by the Northeastern edtech Department to allow Task Forces around the U.S. to track on-going Human Trafficking cases in cooperation with the Department of Justice. Between 2010 and 2012, I was tasked with routine maintenance, bug fixes and upgrades involving JavaScript and PHP.</p>
+		
+		<h3>Northeastern University MedAppTrak System</h3>
+		<p>MedAppTrak is a Content Management System I built in 2010 which allows students to compile their personal and professional information needed by the Northeastern University PreHealth department in preparation of their application to Medical School. The site is built in HTML5, PHP, and JavaScript.</p>
+		
+		<h3>Project Play Training</h3>
+		<p>I managed the Intrax English Programs relaunch after receiving the design specs and content, and coordinated with a team of 8 to see it through the development phase. The site was developed in Drupal, contains over 400 pages and it features translations in Arabic, Portuguese, and Spanish.</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://www.intrax.edu/">http://www.intrax.edu/</a></p>
+		
+		<h3>Intrax English Programs</h3>
+		<p>I managed the Intrax English Programs relaunch after receiving the design specs and content, and coordinated with a team of 8 to see it through the development phase. The site was developed in Drupal, contains over 400 pages and it features translations in Arabic, Portuguese, and Spanish.</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://www.intrax.edu/">http://www.intrax.edu/</a></p>
+		
+		<h3>Global Internships</h3>
+		<p>The Global Internships site recieved a much needed update which included mobile considerations and a clean, modern design. I provided front end expertise (Javascript) and back end data integration (Salesforce data stored in MySQL, via PHP).</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://www.globalinternships.com/">http://www.globalinternships.com/</a></p>
+		
+		<h3>Ron Seaboyer Electrical Maintenance and Construction</h3>
+		<p>Ron Seaboyer Electrical Maintenance and Construction is a site I designed and developed for my father's business.</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://ronseaboyer.com/">http://ronseaboyer.com/</a></p>
+	</section>
+	<section id="projects">
+		<h2>Projects</h2>
+		<h3>Star Ship Latitude</h3>
+		<p>Star Ship Latitute was my game jam entry into the Leap Motion Game Jam.</p>
+		<p><em>As the defensive engineer on the Space Ship Latitude, it's your job to keep the rest of the crew alive. Use your hands to position the ship's on board shields in the way of incoming missiles!</em></p>
+		<p><i class="fa fa-youtube-play"></i> <a href="https://www.youtube.com/watch?v=NrUKmZiYWtQ">https://www.youtube.com/watch?v=NrUKmZiYWtQ</a></p>
+		<i class="fa fa-external-link-square"></i> <a href="http://aseaboyer.itch.io/star-ship-latitude">http://aseaboyer.itch.io/star-ship-latitude</a></p>
+		
+		<h3>Retro Hearts healthbar Demo</h3>
+		<p>I was inspired to reproduce a simple HTML5 take on the hearts-style health bar found in some 90's video games. There's a little bit of Javascript keeping track of the health value, but all of the display and animation is handled with CSS3. This means the display layer is 100% independant of the logic layer!</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://aseaboyer.github.io/html5-ui-demo/retro-hearts-flex.html">http://aseaboyer.github.io/html5-ui-demo/retro-hearts-flex.html</a></p>
+		
+		<h3>Healthbar Demo</h3>
+		<p>This is a HTML5 demo of a healthbar, similar to those found in a MMO or fighting game. I'll be updating this in the future to include other common game UI elements!</p>
+		<p><i class="fa fa-external-link-square"></i> <a href="http://aseaboyer.github.io/html5-ui-demo/healthbar.html">http://aseaboyer.github.io/html5-ui-demo/healthbar.html</a></p>
+	</section>
+	<section id="contact">
+		<h2>Code with Me!</h2>
+		<ul class="fa-ul">
+			<li><i class="fa-li fa fa-linkedin-square"></i>  <a href="https://www.linkedin.com/in/aseaboyer" title="Linkedin">Linkedin</a></li>
+			<li><i class="fa-li fa fa-jsfiddle"></i>  <a href="http://jsfiddle.net/user/aseaboyer/" title="JS Fiddle user">JSFiddle</a></li>
+			<li><i class="fa-li fa fa-github-alt"></i>  <a href="https://github.com/aseaboyer" title="GitHub link">GitHub</a></li>
+			<li><i class="fa-li fa fa-twitter-square"></i>  <a href="https://twitter.com/AndyMakesThings" title="">Twitter</a></li>
+		</ul>
+	</section>
+</article>
+
+<header>
+<nav>
+	<a href="#" id="MenuToggle"><i class="fa fa-bars"></i></a>
+	<h1>Andrew Seaboyer</h1>
+	<div class="nav list-group">
+	  <a class="list-group-item" href="#resume" id="resume-link"><i class="fa fa-home fa-fw"></i>&nbsp; Resume</a>
+	  <a class="list-group-item" href="#portfolio" id="portfolio-link"><i class="fa fa-book fa-fw"></i>&nbsp; Portfolio</a>
+	  <a class="list-group-item" href="#projects" id="projects-link"><i class="fa fa-pencil fa-fw"></i>&nbsp; Projects</a>
+	  <a class="list-group-item" href="#contact" id="contact-link"><i class="fa fa-comment fa-fw"></i>&nbsp; Contact Info</a>
+	</div>
+</nav>
+</header>
+
+</div><!-- #content -->
+
+<footer>
+<span>
+copyright info, I guess
+</span>
+</footer>
+</body>
+</html>
