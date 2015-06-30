@@ -117,6 +117,7 @@ body.menuOpen header .nav {
 body header .nav a {
 	border-top:1px solid rgba(0,0,0, .2);
 	color:#f6f6f6;
+	font-size:1.2em;
 }
 body header .nav a:hover, body header .nav a.selected {
 	background-color:rgba(0,0,0, .2);
@@ -204,6 +205,9 @@ section img.project-hero {
 	header .nav {
 		height:100%;
 	}
+	header .nav .fa-caret-right {
+		float:right;
+	}
 	header #MenuToggle {
 		display:none;
 	}
@@ -249,7 +253,7 @@ section img.project-hero {
 			for( var x = 0; x < sections.length; x++ ) {
 				document.getElementById( sections[x].id+'-link' ).classList.remove( 'selected' );
 				sections[x].classList.remove( 'active' );
-				if( document.body.scrollTop >= sections[x].offsetTop ) { selectedID = x; }
+				if( document.body.scrollTop >= (sections[x].offsetTop-50) ) { selectedID = x; }
 			}
 			//console.log( document.body.scrollTop + ' - ' + sections[selectedID].id );
 			document.getElementById( sections[selectedID].id+'-link' ).classList.add( 'selected' );
@@ -419,7 +423,7 @@ section img.project-hero {
 	<div class="nav list-group">
 		<a class="nav-item list-group-item" href="#resume" id="resume-link"><i class="fa fa-home fa-fw"></i>Resume &nbsp;<i class='fa fa-caret-right'></i></a>
 		<a class="nav-item list-group-item" href="#portfolio" id="portfolio-link"><i class="fa fa-book fa-fw"></i>&nbsp; Portfolio &nbsp;<i class='fa fa-caret-right'></i></a>
-		<a class="nav-item list-group-item" href="#projects" id="projects-link"><i class="fa fa-pencil fa-fw"></i>&nbsp; Projects &nbsp;<i class='fa fa-caret-right'></i></a>
+		<a class="nav-item list-group-item" href="#projects" id="projects-link"><i class="fa fa-rocket fa-fw"></i>&nbsp; Projects &nbsp;<i class='fa fa-caret-right'></i></a>
 		<a class="nav-item list-group-item" href="#contact" id="contact-link"><i class="fa fa-comment fa-fw"></i>&nbsp; Contact Info &nbsp;<i class='fa fa-caret-right'></i></a>
 	</div>
 </nav>
