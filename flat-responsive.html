@@ -3,294 +3,17 @@
 <head>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
-<style>
-body {
-	background-color:#f6f6f6;
-	font-family:'Open Sans', sans-serif;
-	margin:0;
-	padding:0;
+<link rel="stylesheet" href="styles.css">
 
-}
-#content {
-	background-color:#ededed;
-	margin:50px 0 0 0;
-	max-width:100%;
-		
-	display:flex;
-	flex-direction:column;
-}
-
-h1 {
-	color:#f6f6f6;
-	cursor:pointer;
-	margin:0;
-	min-height:50px;
-	padding:10px 0 0 0;
-}
-h2 {
-	border-bottom:1px solid #999;
-	font-size:2em;
-	margin-top:0;
-	padding-bottom:25px;
-	padding-top:20px;
-	text-align:center;
-}
-h3 {
-	font-size:1.4em;
-}
-.headerBG {
-	background-size:cover;
-	background-position:50% 50%;
-	height:150px;
-	text-shadow:2px 2px 10px #fff;
-}
-
-section {
-	position:relative
-}
-section.active {
-}
-section.active h2 {
-}
-
-header {
-	background-color:#678;
-	margin:0;
-	padding:0;
-	position:fixed;
-	order:1;
-	top:0;
-	width:100%;
-}
-header #MenuToggle {
-	border:2px solid #fff;
-	border-radius:4px;
-	color:#fff;
-	display:inline-block;
-	height:32px;
-	position:absolute;
-	top:10px;
-	right:10px;
-	width:35px;
-}
-header #MenuToggle:hover {
-	background-color:#678;
-}
-header .nav {
-	display:block;
-	height:0;
-	overflow:hidden;
-	transition:height 250ms;
-}
-
-nav {
-	border-radius:0;
-	border-width:0;
-	border-bottom:2px solid #666;
-	text-align:center;
-}
-nav a i.fa-caret-right {
-	color:transparent;
-}
-nav a.selected i.fa-caret-right {
-	color:#fff;
-}
-nav .list-group nav {
-	
-}
-nav a.list-group-item {
-	display:block;
-	padding:10px;
-	text-decoration:none;
-}
-nav a.list-group-item i {
-	
-}
-
-header ul {
-	background-color:#fff;
-	list-style-type:none;
-	margin:0;
-	padding:0;
-}
-body.menuOpen header .nav {
-	height:100%;
-}
-body header .nav a {
-	border-top:1px solid rgba(0,0,0, .2);
-	color:#f6f6f6;
-	font-size:1.2em;
-}
-body header .nav a:hover, body header .nav a.selected {
-	background-color:rgba(0,0,0, .2);
-}
-header .nav i.fa-fw {
-	margin-right:5px;
-	padding:0;
-	transition:margin-right 500ms ease-out;
-}
-header .nav a:hover i.fa-fw, header .nav a.selected i {
-	margin-right:10px;
-}
-body.menuOpen header ul {
-	background-color:#678;
-}
-header ul li {
-	border-bottom:1px dotted #666;
-}
-header ul li a {
-	text-decoration:none;
-}
-
-content {
-	background-color:#fcfcfc;
-	width:100%;
-	order:2;
-}
-section {
-	border-bottom:1px solid #999;
-	margin:0 30px 0 30px;
-	padding:0;
-	padding-bottom:4em;
-	min-height:100px;
-}
-
-article {
-	margin-bottom:4em;
-}
-
-footer {
-	background-color:#ccc;
-}
-
-section img.project-hero {
-	width:100%;
-}
-p.slideshow-link {
-	height:1.2em;
-	overflow:hidden;
-	position:relative;
-}
-p.slideshow-link span {
-	display:block;
-	height:1em;
-	position:relative;
-	left:22px;
-	top:0;
-	transition:top 300ms ease-out;
-}
-p.slideshow-link:hover span {
-	top:-1.2em;
-}
-p.slideshow-link>.fa {
-	position:absolute;
-	top:0;
-}
-
-@media all and (orientation:landscape) {
-
-	#content {
-		flex-direction:row;
-		margin:0 auto;
-		max-width:1100px;
-	}
-	
-	header {
-		background-color:transparent;
-		flex:2;
-		min-width:230px;
-		order:1;
-		position:relative;
-		
-		background:-moz-linear-gradient(left,  rgba(102,102,102,0) 0%, rgba(102,102,102,0) 99%, rgba(102,102,102,1) 100%); /* FF3.6+ */
-		background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,102,102,0)), color-stop(99%,rgba(102,102,102,0)), color-stop(100%,rgba(102,102,102,1))); /* Chrome,Safari4+ */
-		background:-webkit-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* Chrome10+,Safari5.1+ */
-		background:-o-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* Opera 11.10+ */
-		background:-ms-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* IE10+ */
-		background:linear-gradient(to right,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* W3C */
-		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00666666', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
-	}
-	nav {
-		background-color:#678;
-		border-radius:5px;
-		border:2px solid #666;
-		margin-top:10%;
-		position:absolute;
-		text-align:left;
-		top:0;
-		transition:top 1000ms;
-		width:100%;
-	}
-	h1 {
-		cursor:default;
-		padding:10px 0 0 10px;
-	}
-	header .nav {
-		height:100%;
-	}
-	header .nav .fa-caret-right {
-		float:right;
-	}
-	header #MenuToggle {
-		display:none;
-	}
-	content {
-		flex:5;
-		order:2;
-	}
-	
-	footer {
-		bottom:0;
-		position:fixed;
-		text-align:center;
-		width:100%;
-	}
-}
-</style>
-
+<script type="text/javascript" src="features.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
 <script>
-	document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
-	console.log ( window.innerWidth + " x " + window.innerHeight );
-
-		var menuToggle = document.getElementById( 'MenuToggle' );
-		menuToggle.addEventListener("click", function ( e ) {
-			document.body.classList.toggle( "menuOpen" );
-			jogScrollEvent();
-			e.preventDefault();
-		}, false);
-		var h1 = document.getElementsByTagName( 'h1' );
-		h1[0].addEventListener("click", function ( e ) {
-			document.body.classList.toggle( "menuOpen" );
-			jogScrollEvent();
-			e.preventDefault();
-		}, false);
-		var menuItems = document.getElementsByClassName( 'nav-item' )
-		for( var x = 0; x < menuItems.length; x++ ) {
-			menuItems[x].addEventListener("click", function ( e ) {
-				document.body.classList.remove( "menuOpen" );
-				jogScrollEvent();
-			}, false);
-		}
-		
-		document.body.onscroll = function(){
-			jogScrollEvent();
-		};
-		
-		var sections = document.getElementsByTagName( "section" );
-		var nav = document.getElementsByTagName( "nav" );
-		function jogScrollEvent() {
-			var selectedID = 0;
-			for( var x = 0; x < sections.length; x++ ) {
-				document.getElementById( sections[x].id+'-link' ).classList.remove( 'selected' );
-				sections[x].classList.remove( 'active' );
-				if( document.body.scrollTop >= (sections[x].offsetTop-50) ) { selectedID = x; }
-			}
-			//console.log( document.body.scrollTop + ' - ' + sections[selectedID].id );
-			document.getElementById( sections[selectedID].id+'-link' ).classList.add( 'selected' );
-			sections[selectedID].classList.add( 'active' );
-			nav[0].style.top = document.body.scrollTop + 'px';
-		}
-	});
+document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
+	var slideShow = Slideshow();
+	
+	// create: slides, slidesets
+	// add them to each other up to slideshow
+});
 </script>
 </head>
 <body>
@@ -441,7 +164,7 @@ p.slideshow-link>.fa {
 		</article>
 	</section>
 	<section id="contact">
-		<h2>Code with Me!</h2>
+		<h2>Contact Info</h2>
 		<ul class="fa-ul">
 			<li><i class="fa-li fa fa-linkedin-square"></i>  <a href="https://www.linkedin.com/in/aseaboyer" title="Linkedin">Linkedin</a></li>
 			<li><i class="fa-li fa fa-jsfiddle"></i>  <a href="http://jsfiddle.net/user/aseaboyer/" title="JS Fiddle user">JSFiddle</a></li>
@@ -454,7 +177,7 @@ p.slideshow-link>.fa {
 <header>
 <nav>
 	<a href="#" id="MenuToggle"><i class="fa fa-bars fa-2x"></i></a>
-	<h1>Andrew Seaboyer</h1>
+	<h1>Andy Seaboyer</h1>
 	<div class="nav list-group">
 		<a class="nav-item list-group-item" href="#resume" id="resume-link"><i class="fa fa-home fa-fw"></i>Resume &nbsp;<i class='fa fa-caret-right'></i></a>
 		<a class="nav-item list-group-item" href="#portfolio" id="portfolio-link"><i class="fa fa-book fa-fw"></i>&nbsp; Portfolio &nbsp;<i class='fa fa-caret-right'></i></a>
@@ -467,9 +190,7 @@ p.slideshow-link>.fa {
 </div><!-- #content -->
 
 <footer>
-<span>
-copyright info, I guess
-</span>
+<span>Site design by Andy Seaboyer.</span>
 </footer>
 </body>
 </html>
