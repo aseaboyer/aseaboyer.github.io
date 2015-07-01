@@ -187,7 +187,7 @@ p.slideshow-link>.fa {
 	top:0;
 }
 
-@media screen and (min-width:600px) {
+@media only screen and (min-width:320px) {
 
 	#content {
 		flex-direction:row;
@@ -250,7 +250,7 @@ p.slideshow-link>.fa {
 
 <script>
 	document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
-	console.log ( window.innerWidth + " x " + window.innerHeight );
+	alert ( window.innerWidth + " x " + window.innerHeight );
 
 		var menuToggle = document.getElementById( 'MenuToggle' );
 		menuToggle.addEventListener("click", function ( e ) {
