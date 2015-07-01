@@ -21,6 +21,7 @@ body {
 
 h1 {
 	color:#f6f6f6;
+	cursor:pointer;
 	margin:0;
 	min-height:50px;
 	padding:10px 0 0 0;
@@ -164,8 +165,28 @@ footer {
 section img.project-hero {
 	width:100%;
 }
+p.slideshow-link {
+	height:1.2em;
+	overflow:hidden;
+	position:relative;
+}
+p.slideshow-link:hover span {
+	top:-1.2em;
+}
+p.slideshow-link span {
+	display:block;
+	height:1em;
+	position:relative;
+	left:22px;
+	top:0;
+	transition:top 300ms ease-out;
+}
+p.slideshow-link>.fa {
+	position:absolute;
+	top:0;
+}
 
-@media (min-width:600px) {
+@media screen and (min-width:600px) {
 
 	#content {
 		flex-direction:row;
@@ -200,6 +221,7 @@ section img.project-hero {
 		width:100%;
 	}
 	h1 {
+		cursor:default;
 		padding:10px 0 0 10px;
 	}
 	header .nav {
@@ -230,6 +252,12 @@ section img.project-hero {
 
 		var menuToggle = document.getElementById( 'MenuToggle' );
 		menuToggle.addEventListener("click", function ( e ) {
+			document.body.classList.toggle( "menuOpen" );
+			jogScrollEvent();
+			e.preventDefault();
+		}, false);
+		var h1 = document.getElementsByTagName( 'h1' );
+		h1[0].addEventListener("click", function ( e ) {
 			document.body.classList.toggle( "menuOpen" );
 			jogScrollEvent();
 			e.preventDefault();
@@ -355,6 +383,11 @@ section img.project-hero {
 			<h2>Portfolio</h2>
 			<h3>Human Trafficking Data Collection & Reporting Project</h3>
 			<p>The Human Trafficking Data Collection & Reporting Project was developed by the Northeastern edtech Department to allow Task Forces around the U.S. to track on-going Human Trafficking cases in cooperation with the Department of Justice. Between 2010 and 2012, I was tasked with routine maintenance, bug fixes and upgrades involving JavaScript and PHP.</p>
+			<p class="slideshow-link" id="htrs-slideshow">
+				<span>View Screen Shots</span>
+				<span>Open Slideshow <i class="fa fa-external-link"></i></span>
+				<i class="fa fa-picture-o"></i>
+			</p>
 		</article>
 		
 		<article>
