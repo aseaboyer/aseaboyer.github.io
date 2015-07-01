@@ -9,6 +9,7 @@ body {
 	font-family:'Open Sans', sans-serif;
 	margin:0;
 	padding:0;
+
 }
 #content {
 	background-color:#ededed;
@@ -170,9 +171,6 @@ p.slideshow-link {
 	overflow:hidden;
 	position:relative;
 }
-p.slideshow-link:hover span {
-	top:-1.2em;
-}
 p.slideshow-link span {
 	display:block;
 	height:1em;
@@ -180,6 +178,9 @@ p.slideshow-link span {
 	left:22px;
 	top:0;
 	transition:top 300ms ease-out;
+}
+p.slideshow-link:hover span {
+	top:-1.2em;
 }
 p.slideshow-link>.fa {
 	position:absolute;
@@ -249,6 +250,7 @@ p.slideshow-link>.fa {
 
 <script>
 	document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
+	console.log ( window.innerWidth + " x " + window.innerHeight );
 
 		var menuToggle = document.getElementById( 'MenuToggle' );
 		menuToggle.addEventListener("click", function ( e ) {
