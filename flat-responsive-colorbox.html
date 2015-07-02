@@ -8,10 +8,18 @@
 <link rel="stylesheet" href="styles.css">
 
 <script type="text/javascript" src="features.js"></script>
-<script type="text/javascript" src="slideshow.js"></script>
+<link rel="stylesheet" href="colorbox/colorbox.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="colorbox/jquery.colorbox-min.js"></script>
 <script>
+$(document).ready(function(){
+	$(".htrs-images").colorbox({rel:'htrs-images'}); //Examples of how to assign the Colorbox event to elements
+});
+
+
+/*
 var slideShow;
-document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
+document.addEventListener('DOMContentLoaded',function(){
 
 	// create: slides, slidesets
 	var slideSets = [
@@ -43,6 +51,7 @@ document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
 	slideShow.addSlideSets( slideSets );
 	
 });
+*/
 </script>
 </head>
 <body>
@@ -137,11 +146,16 @@ document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
 			<h2>Portfolio</h2>
 			<h3>Human Trafficking Data Collection & Reporting Project</h3>
 			<p>The Human Trafficking Data Collection & Reporting Project was developed by the Northeastern edtech Department to allow Task Forces around the U.S. to track on-going Human Trafficking cases in cooperation with the Department of Justice. Between 2010 and 2012, I was tasked with routine maintenance, bug fixes and upgrades involving JavaScript and PHP.</p>
-			<p class="slideshow-link" id="htrs-slideshow">
+			<p class="slideshow-link" id="htrs-slideshow"> 
+				<a class="htrs-images" href="img/portfolio/htrs1.png" title="Training and Presentation Search and Create feature.">
 				<span>View Screen Shots</span>
 				<span>Open Slideshow <i class="fa fa-external-link"></i></span>
+				</a>
 				<i class="fa fa-picture-o"></i>
 			</p>
+			
+			<p><a class="htrs-images" href="img/portfolio/htrs2.png" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
+			<p><a class="htrs-images" href="img/portfolio/htrs3.png" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
 		</article>
 		
 		<article>
@@ -179,14 +193,14 @@ document.addEventListener('DOMContentLoaded',function(){ /* DOM ready */
 		</article>
 		
 		<article>
-			<div class="headerBG" style="background-image:url('portfolio/img/retro-hearts.png');">&nbsp;</div>
+			<div class="headerBG" style="background-image:url('img/projects/retro-hearts.png');">&nbsp;</div>
 			<h3>Retro Hearts healthbar Demo</h3>
 			<p>I was inspired to reproduce a simple HTML5 take on the hearts-style health bar found in some 90's video games. There's a little bit of Javascript keeping track of the health value, but all of the display and animation is handled with CSS3. This means the display layer is 100% independant of the logic layer!</p>
 			<p><i class="fa fa-external-link-square"></i> <a href="http://aseaboyer.github.io/html5-ui-demo/retro-hearts-flex.html" target="_blank">http://aseaboyer.github.io/html5-ui-demo/retro-hearts-flex.html</a></p>
 		</article>
 		
 		<article>
-			<div class="headerBG" style="background-image:url('portfolio/img/healthbar.png');">&nbsp;</div>
+			<div class="headerBG" style="background-image:url('img/projects/healthbar.png');">&nbsp;</div>
 			<h3>Healthbar Demo</h3>
 			<p>This is a HTML5 demo of a healthbar, similar to those found in a MMO or fighting game. I'll be updating this in the future to include other common game UI elements!</p>
 			<p><i class="fa fa-external-link-square"></i> <a href="http://aseaboyer.github.io/html5-ui-demo/healthbar-inventory.html" target="_blank">http://aseaboyer.github.io/html5-ui-demo/healthbar-inventory.html</a></p>

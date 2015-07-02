@@ -172,7 +172,7 @@ section img.project-hero {
 	width:100%;
 }
 p.slideshow-link {
-	height:1.2em;
+	cursor:pointer;height:1.2em;
 	overflow:hidden;
 	position:relative;
 }
