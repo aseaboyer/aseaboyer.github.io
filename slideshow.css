@@ -37,6 +37,8 @@
 
 #slideshowWrapper .slide {
 	background-color:transparent;
+	background-position:50% 50%;
+	background-repeat:no-repeat;
 	height:78%;
 	left:11%;
 	position:absolute;
@@ -55,5 +57,9 @@
 }
 
 @media all and (orientation:landscape) {
+
+	#slideshowWrapper .slideButton {
+		font-size:5em;
+	}
 
 }
