@@ -18,15 +18,6 @@ function Slideset( name, triggerName, slides ) {
 		"name": name,
 		"slides": slides,
 		"trigger": document.getElementById( triggerName ),
-		/*"addTrigger": function ( slideshow, owner, newTrigger ) {
-			this.trigger = newTrigger;
-			
-			newTrigger.addEventListener("click", function ( e ) {
-				console.log( "Open " + this.name );
-				slideshow.open( this.name );
-				e.preventDefault();
-			}, false);
-		},*/
 	}
 	
 	return obj;
@@ -49,14 +40,12 @@ function Slideshow( triggerName, divName ) {
 			console.log( "Number of slidesets: " + this.slideSets.length);
 		},
 		"addSlideSets": function( set ) {
-			
 			if( typeof set == "object" && set.length >= 1 ) {
 				for( var x = 0; x < set.length; x++ ) {
 					this.addSlideSet ( set[x] );
 					this.addSlideSetTrigger ( x, set[x].trigger );
 				}
 			}
-			
 		},
 		"addSlideSetTrigger": function ( num, newTrigger ) {
 			var thisObj = this; // scope
@@ -66,12 +55,6 @@ function Slideshow( triggerName, divName ) {
 				thisObj.open( num );
 				e.preventDefault();
 			}, false);
-		
-			/*console.log( newTrigger );
-			if( newTrigger != und ) {
-				set.addTrigger( this, newTrigger );
-				console.log( "Add trigger " + triggerName );
-			}*/
 		},
 		"open": function ( id ) {
 			// init on open
@@ -125,11 +108,9 @@ function Slideshow( triggerName, divName ) {
 				slideBox.setAttribute( "id", "SlideshowSlide" );
 				slideBox.classList.add( "slide" );
 				this.wrapper.appendChild( slideBox );
-			
 			// how do we do slides?
 			
 			this.wrapper.classList.add( "open" );
-			//this.wrapper.innerHTML = this.slideSets[id].name;
 			
 			this.loadSlide();
 		},
@@ -156,7 +137,6 @@ function Slideshow( triggerName, divName ) {
 			console.log( this.currentSlide );
 		},
 		"loadSlide": function () {
-		//	this.slideSets[ this.currentSet ].slides[ this.currentSlide ].image;
 			var captionDiv = document.getElementById( 'SlideshowInfo' );
 				captionDiv.innerHTML = this.slideSets[ this.currentSet ].slides[ this.currentSlide ].caption;
 				

@@ -36,7 +36,7 @@
 }
 
 #slideshowWrapper .slide {
-	background-color:#fff;
+	background-color:transparent;
 	height:78%;
 	left:11%;
 	position:absolute;
@@ -52,4 +52,8 @@
 	padding:1%;
 	position:absolute;
 	width:78%;
+}
+
+@media all and (orientation:landscape) {
+
 }

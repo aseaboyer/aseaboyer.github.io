@@ -16,6 +16,14 @@ body {
 p {
 	font-size:1em;
 }
+a, .slideshow-opener {
+	color:#569;
+	text-decoration:underline;
+}
+a:hover, .slideshow-opener:hover {
+	color:#349;
+	text-decoration:none;
+}
 h1 {
 	color:#f6f6f6;
 	cursor:pointer;
