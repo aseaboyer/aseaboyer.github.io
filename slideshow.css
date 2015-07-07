@@ -12,6 +12,9 @@
 	bottom:0;
 }
 
+#slideshowWrapper .slideButton {
+	font-size:5em;
+}
 #slideshowWrapper .slideButton:hover {
 	color:#999;
 	cursor:pointer;
@@ -59,7 +62,6 @@
 @media all and (orientation:landscape) {
 
 	#slideshowWrapper .slideButton {
-		font-size:5em;
+		font-size:3em;
 	}
-
 }
