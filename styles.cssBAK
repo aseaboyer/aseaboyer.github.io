@@ -1,13 +1,11 @@
 body {
-	/*background-color:#f6f6f6;*/
-	color:#3d3d3d;
-	background-color:#fcfcfc;
+	background-color:#f6f6f6;
 	font-family:'Open Sans', sans-serif;
 	margin:0;
 	padding:0;
 }
 #content {
-	/*background-color:#ededed;*/
+	background-color:#ededed;
 	margin:50px 0 0 0;
 	max-width:100%;
 		
@@ -27,12 +25,17 @@ a:hover, .slideshow-opener:hover {
 	text-decoration:none;
 }
 h1 {
+	color:#f6f6f6;
 	cursor:pointer;
 	font-size:2.2em;
 	margin:0;
 	min-height:50px;
-	padding: 5px 0;
+	padding:10px 0 0 0;
 	
+	text-shadow:-1px -1px 0 #678,
+				1px -1px 0 #678,
+				-1px 1px 0 #678,
+				1px 1px 0 #678;
 	z-index:11;
 }
 h2 {
@@ -62,7 +65,7 @@ section.active h2 {
 }
 
 header {
-	/*background-color:#678;*/
+	background-color:#678;
 	margin:0;
 	padding:0;
 	position:fixed;
@@ -93,7 +96,6 @@ header .nav {
 }
 
 nav {
-	background-color:#678;
 	border-width:0;
 	border-bottom:2px solid #666;
 	text-align:center;
@@ -101,8 +103,6 @@ nav {
 }
 nav a i.fa-caret-right {
 	color:transparent;
-	margin-left:10px;
-	transition:color 250ms;
 }
 nav a.selected i.fa-caret-right {
 	color:#fff;
@@ -118,15 +118,13 @@ nav a.list-group-item {
 nav a.list-group-item i {
 	
 }
-#about-me-sidebar {
-	border-top: 1px solid #999;
-	display:none;
-	margin-top:10px;
-}
-#about-me-sidebar h2 {
-	padding: 10px 0;
-}
 
+header ul {
+	background-color:#fff;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
 body.menuOpen header .nav {
 	height:100%;
 }
@@ -157,7 +155,7 @@ header ul li a {
 }
 
 content {
-	/*background-color:#fcfcfc;*/
+	background-color:#fcfcfc;
 	width:100%;
 	order:2;
 }
@@ -221,44 +219,34 @@ p.slideshow-link>.fa {
 		min-width:230px;
 		order:1;
 		position:relative;
+		
+		background:-moz-linear-gradient(left,  rgba(102,102,102,0) 0%, rgba(102,102,102,0) 99%, rgba(102,102,102,1) 100%); /* FF3.6+ */
+		background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(102,102,102,0)), color-stop(99%,rgba(102,102,102,0)), color-stop(100%,rgba(102,102,102,1))); /* Chrome,Safari4+ */
+		background:-webkit-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* Chrome10+,Safari5.1+ */
+		background:-o-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* Opera 11.10+ */
+		background:-ms-linear-gradient(left,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* IE10+ */
+		background:linear-gradient(to right,  rgba(102,102,102,0) 0%,rgba(102,102,102,0) 99%,rgba(102,102,102,1) 100%); /* W3C */
+		filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00666666', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
 	}
 	nav {
-		background-color:transparent;
-		border-width:0;
-		margin-top:10px;
+		background-color:#678;
+		border:2px solid #666;
+		margin-top:10%;
 		position:absolute;
 		text-align:left;
 		top:0;
 		transition:top 1000ms;
 		width:100%;
 	}
-	#about-me-sidebar {
-		display:block;
-	}
 	h1 {
-		background-color:transparent;
-		color:#;
 		cursor:default;
 		padding:10px 0 0 10px;
 	}
 	header .nav {
 		height:100%;
 	}
-	header .nav a.nav-item {
-		border-top-width:0;
-		color:#333;
-		margin:10px 0;
-		padding:5px 10px;
-	}
-	body header .nav a:hover, body header .nav a.selected {
-		background-color:transparent;
-		text-decoration:underline;
-	}
 	header .nav .fa-caret-right {
-		color:transparent;
-	}
-	body header .nav a:hover .fa-caret-right, body header .nav a.selected .fa-caret-right {
-		color:#666;
+		float:right;
 	}
 	header #MenuToggle {
 		display:none;

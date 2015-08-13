@@ -14,6 +14,8 @@
 
 #slideshowWrapper .slideButton {
 	font-size:5em;
+	text-shadow:2px 2px 7px rgba(0,0,0,.7);
+	z-index:20;
 }
 #slideshowWrapper .slideButton:hover {
 	color:#999;
@@ -42,26 +44,40 @@
 	background-color:transparent;
 	background-position:50% 50%;
 	background-repeat:no-repeat;
-	height:78%;
-	left:11%;
+	height:100%;
+	left:0;
 	position:absolute;
-	top:10%;
-	width:80%;
+	top:0;
+	width:100%;
 }
 
 #slideshowWrapper .info {
 	background-color:#fff;
-	bottom:2.5%;
+	bottom:0;
 	color:#000;
-	left:11%;
-	padding:1%;
+	left:0%;
+	padding:0%;
 	position:absolute;
-	width:78%;
+	width:100%;
 }
 
 @media all and (orientation:landscape) {
 
 	#slideshowWrapper .slideButton {
 		font-size:3em;
+	}
+	#slideshowWrapper .slide {
+	height:78%;
+	left:11%;
+	position:absolute;
+	top:10%;
+	width:80%;
+	}
+	
+	#slideshowWrapper .info {
+		bottom:2.5%;
+		left:11%;
+		padding:1%;
+		width:78%;
 	}
 }
