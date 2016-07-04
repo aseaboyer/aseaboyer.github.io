@@ -1,0 +1,143 @@
+li {
+    list-style-image:none;
+    list-style-type:none;
+}
+
+body #header nav {
+    display:none;
+}
+#header {
+    height:110px;
+}
+
+#header #title {
+    padding-top:25px;
+    text-align:center;
+}
+
+body section {
+    margin-top:110px;
+}
+section h2 {
+    margin-top:30px;
+    text-align:center;
+    width:100%;
+}
+
+article {
+    
+}
+article:not(:last-child)::after {
+    border-top:1px solid white;
+    color:transparent;
+    content:".";
+    display:block;
+    height:1px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    top:-10px;
+    width:100px;
+}
+
+article.portfolio .item {
+    margin-left:200px;
+    min-height:200px;
+    position:relative;
+}
+article.portfolio .item img.icon {
+    border-radius:50%;
+    height:180px;
+    left:-200px;
+    position:absolute;
+    top:0;
+    width:180px;
+}
+
+#social {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+#social li {
+    display:inline-block;
+    margin:10px;
+}
+
+article#bio {
+    text-align:center;
+}
+article#bio img {
+    border:1px solid rgb(240, 231, 213);
+    border-radius:50%;
+    display:inline-block;
+}
+article#bio p {
+    margin:0 auto;
+    max-width:500px;
+    padding-bottom:50px;
+    text-align:left;
+}
+
+article#bio .button-link {
+    
+}
+article#bio .button-link a {
+    background-color:#666;
+    border-radius:4px;
+    padding:1rem;
+}
+article#bio .button-link.center {
+    text-align:center;
+}
+
+/*
+article#projects ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-justify-content:space-between;
+    -moz-justify-content:space-between;
+    -ms-justify-content:space-between;
+    justify-content:space-between;
+}
+article#projects li.item {
+    list-style-image:none;
+    list-style-type:none;
+    margin-bottom:20px;
+    position:relative;
+    text-align:center;
+    width:40%;
+}
+
+article#projects .image-icon {
+    border:3px ridge lightgray;
+    border-radius:50%;
+    height:80px;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    width:80px;
+}
+article#projects .image-icon img {
+    max-width:inherit;
+    position:absolute;
+}
+*/

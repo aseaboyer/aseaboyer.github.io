@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Aseaboyer.GitHub.io by aseaboyer</title>
+    <title>Andy Seaboyer</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <link rel="stylesheet" href="stylesheets/github-dark-overrides.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
@@ -22,20 +24,114 @@
         <nav>
           <li class="fork"><a href="https://github.com/aseaboyer">View On GitHub</a></li>
         </nav>
+        <div id="title">
+            <h1>Andy Seaboyer</h1>
+            <p><i class="fa fa-code" aria-hidden="true"></i> Web Developer,
+                <i class="fa fa-gamepad" aria-hidden="true"></i> Game Designer,
+                <i class="fa fa-universal-access" aria-hidden="true"></i> Accessibility Advocate,
+                <i class="fa fa-wrench" aria-hidden="true"></i> Maker</p>
+        </div>
       </div><!-- end header -->
 
     <div class="wrapper">
 
       <section>
-        <div id="title">
-          <h1>Aseaboyer.GitHub.io</h1>
-          <p>Personal site</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/aseaboyer">aseaboyer</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+          <article id="bio">
+              <img src="img/andy_seaboyer.jpg" width="200" height="200" alt="Andrew Seaboyer" />
+              <div id="bioText">
+                <p>I'm a web developer and game designer living in Seattle. I'm increadibly passionate about games and accessibilty. When I'm not working on code-related projects, I'm often tinkering with other projects!</p>
+                  <p><strong>Skillset:</strong> HTML5, CSS3, JavaScript, jQuery, PHP, Photoshop, WebGL, Drupal, Git, Linux, Sass, Unity 3D, C#, Java</p>
+                <p class="button-link center"><a href="AndrewSeaboyer-Resume.pdf" target="resume"><i class="fa fa-download" aria-hidden="true"></i> Download my Resume</a></p>
+              </div>
+          </article>
+          
+          <article id="web" class="portfolio">
+              <h2>Web Portfolio</h2>
+              <div class="item">
+                <image src="img/portfolio/Nintendo_3DS_XL.png" class="icon" />
+                <h3>DigiPen Game Studios</h3>
+                <p>A WordPress micro-site to promote the recently created Singapore-based DigiPen Game Studios who is partnered with Singapore and Nintendo.</p>
+                <p><a href="https://www.digipengamestudios.com/" target= "_blank">Link</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/htrs1.png" class="icon">
+                <h3>Human Trafficking Data Collection &amp; Reporting Project</h3>
+			<p>The Human Trafficking Data Collection &amp; Reporting Project was developed by the Northeastern edtech Department to allow Task Forces around the U.S. to track on-going Human Trafficking cases in cooperation with the Department of Justice. Between 2010 and 2012, I was tasked with routine maintenance, bug fixes and upgrades involving JavaScript and PHP.</p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/mat.gif" class="icon">
+                <h3>Northeastern University MedAppTrak System</h3>
+                <p>MedAppTrak is a Content Management System I built in 2010 which allows students to compile their personal and professional information needed by the Northeastern University PreHealth department in preparation of their application to Medical School. The site is built in HTML5, PHP, and JavaScript.</p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/pplay.gif" class="icon">
+                <h3>Project Play Training</h3>
+                <p>I managed the Intrax English Programs relaunch after receiving the design specs and content, and coordinated with a team of 8 to see it through the development phase. The site was developed in Drupal, contains over 400 pages and it features translations in Arabic, Portuguese, and Spanish.</p>
+                <p><i class="fa fa-external-link-square"></i> <a href="http://www.intrax.edu/" target="_blank">http://www.intrax.edu/</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/centers.png" class="icon">
+                <h3>Intrax English Programs</h3>
+                <p>I managed the Intrax English Programs relaunch after receiving the design specs and content, and coordinated with a team of 8 to see it through the development phase. The site was developed in Drupal, contains over 400 pages and it features translations in Arabic, Portuguese, and Spanish.</p>
+                <p><i class="fa fa-external-link-square"></i> <a href="http://www.intrax.edu/" target="_blank">http://www.intrax.edu/</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/igi.gif" class="icon">
+                <h3>Global Internships</h3>
+                <p>The Global Internships site recieved a much needed update which included mobile considerations and a clean, modern design. I provided front end expertise (Javascript) and back end data integration (Salesforce data stored in MySQL, via PHP).</p>
+                <p><i class="fa fa-external-link-square"></i> <a href="http://www.globalinternships.com/" target="_blank">http://www.globalinternships.com/</a></p>
+              </div>
+          </article>
+          
+          <article id="web" class="portfolio">
+              <h2>Game Projects</h2>
+              <div class="item">
+                <image src="img/portfolio/bit-mite-gameplay.png" class="icon">
+                    <h3>Bit Mite</h3>
+                    <p>An HTML5 free-to-play web game. Collect coins and avoid the enemies who only move when you do!</p>
+                    <p><a href="https://aseaboyer.itch.io/bit-mite" target="_blank"><i class="fa fa-play" aria-hidden="true"></i> Play</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/dartz-square.jpg" class="icon">
+                    <h3>Dartz</h3>
+                    <p>A game entry for: A Game By It's Cover, 2015. (<a href="http://famicase.com/15/softs/72.html">Source Image</a>)</p>
+                    <p>Move your dartboard around the walls and try to line up darts. A bulls eye is worth more points!</p>
+                    <p><a href="https://www.youtube.com/watch?t=174&v=HjQhuyKvNzU" target="_blank"><i class="fa fa-play" aria-hidden="true"></i> Gameplay featured video</a></p>
+                    <p><a href="http://aseaboyer.itch.io/dartz"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/project-starship_0.png" class="icon">
+                    <h3>Star Ship Latitude</h3>
+                    <p>Star Ship Latitute was my game jam entry into the Leap Motion Game Jam.<br><em>As the defensive engineer on the Space Ship Latitude, it's your job to keep the rest of the crew alive. Use your hands to position the ship's on board shields in the way of incoming missiles!</em></p>
+                    <p><a href="https://www.youtube.com/watch?v=NrUKmZiYWtQ"><i class="fa fa-play" aria-hidden="true"></i> Video</a></p>
+                    <p><a href="http://aseaboyer.itch.io/star-ship-latitude"><i class="fa fa-download" aria-hidden="true"></i> Download</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/project-retro-hearts_0.png" class="icon">
+                    <h3>Retro-Hearts Healthbar</h3>
+                    <p>I was inspired to reproduce a simple HTML5 take on the hearts-style health bar found in some 90's video games. There's a little bit of Javascript keeping track of the health value, but all of the display and animation is handled with CSS3. This means the display layer is 100% independant of the logic layer!</p>
+                    <p><a href="http://aseaboyer.github.io/html5-ui-demo/retro-hearts-flex.html"><i class="fa fa-play" aria-hidden="true"></i> Demo</a></p>
+              </div>
+              <div class="item">
+                <image src="img/portfolio/project-mmo-ui.png" class="icon">
+                    <h3>Healthbar Demo</h3>
+                    <p>This is a HTML5 demo of a healthbar, similar to those found in a MMO or fighting game. I'll be updating this in the future to include other common game UI elements!</p>
+                    <p><a href="http://aseaboyer.github.io/html5-ui-demo/healthbar-inventory.html"><i class="fa fa-play" aria-hidden="true"></i> Demo</a></p>
+              </div>
+          </article>
+          
+          <article id="contact">
+              <h2>Contact</h2>
+              <ul id="social">
+                <li><a href="https://www.linkedin.com/in/aseaboyer" target="_blank"><i class="fa fa-4x fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/AndyMakesThings" target="_blank"><i class="fa fa-4x fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="http://jsfiddle.net/user/aseaboyer/" target="_blank"><i class="fa fa-4x fa-jsfiddle" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/aseaboyer" target="_blank"><i class="fa fa-4x fa-github" aria-hidden="true"></i></a></li>
+              </ul>
+          </article>
 
-        <h3>
+<!--
+<h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
@@ -59,6 +155,7 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+-->
       </section>
 
     </div>
