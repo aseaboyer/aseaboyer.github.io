@@ -1,0 +1,48 @@
+/*
+    Mobile-plus Rules
+    Mostly fixes for phones
+*/
+header {
+    height:92px;
+}
+
+.content-inner {
+    width:94%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#resume-button .fa {
+    display:inline;
+}
+
+#titles ul {
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+#titles li {
+    text-align:left;
+    width:50%;
+}
+
+article.portfolio .item {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+
+article.portfolio .item img.icon {
+    margin:0;
+    width:180px
+}
+
+article.portfolio .item h3 {
+    text-align:left;
+}
+
+article.portfolio .item .content {
+    padding-left: 10px;
+    width:calc(100% - 200px);
+}

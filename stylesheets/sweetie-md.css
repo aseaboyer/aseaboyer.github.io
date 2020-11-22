@@ -1,0 +1,77 @@
+/*
+    Mobile Rules
+*/
+
+main .content-inner {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#titles {
+    width:100%;
+}
+#titles ul {
+    max-width:100%;
+    width:100%;
+}
+
+#titles li {
+    text-align:center;
+    width:25%;
+}
+
+#intro {
+    margin-right: 20px;
+    width:200px;
+}
+
+#intro h2 {
+    margin-bottom:o.5em;
+}
+
+#primary {
+    width:100%;
+    width: calc(100% - 220px);
+}
+
+
+.titles {
+    flex-direction: column;
+}
+
+.titles li {
+    text-align:left;
+    width:100%;
+}
+
+.content-inner {
+}
+
+
+h2 {
+    text-align: left;
+}
+
+#intro h2 {
+    padding-top: 1rem;
+}
+
+article.portfolio .item {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+
+article.portfolio .item img.icon {
+    margin:0;
+    width:180px
+}
+
+article.portfolio .item h3 {
+    text-align:left;
+}
+
+article.portfolio .item .content {
+    padding-left: 10px;
+    width:calc(100% - 200px);
+}

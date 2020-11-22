@@ -1,0 +1,21 @@
+main {
+    padding-bottom:120px;
+}
+
+footer {
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
+
+footer h2 {
+    background-color:transparent;
+}
+
+#contact > div {
+    background-color:white;
+}
+
+#social {
+
+}
