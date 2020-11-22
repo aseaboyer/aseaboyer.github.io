@@ -271,10 +271,9 @@ main a {
     color:rgba(0,124,199,1);
     line-height:1;
     text-decoration: none;
-    transition:border 230ms ease-in;
 }
 main .fa-ul a {
-    border:1px solid transparent;
+    border:1px dotted transparent;
     line-height: 1.5;
 }
 main .fa-ul a:hover {
