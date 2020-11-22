@@ -1,30 +1,43 @@
+
 /*
-    Mobile-plus Rules
-    Mostly fixes for phones
-*/
+ * Print Rules
+ */
+
 header {
-    height:92px;
+    position:initial;
 }
 
-.content-inner {
-    width:94%;
+header .content-inner {
+    justify-content: space-around;
 }
 
 h1 {
-    font-size: 3rem;
+    text-shadow: none;
 }
 
-#resume-button .fa {
-    display:inline;
+body.scrolled h1 {
+    transform:none!important;
+}
+
+#resume-button-wrapper {
+    display:none;
+}
+
+main {
+    padding-top:0;
 }
 
 #titles ul {
-    flex-direction:row;
-    flex-wrap:wrap;
+    flex-direction: row;
+    max-width:100%;
+    width:100%;
 }
 #titles li {
-    text-align:left;
-    width:50%;
+    width:25%;
+}
+
+h2 {
+    text-align: left;
 }
 
 main .item {

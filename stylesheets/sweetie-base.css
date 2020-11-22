@@ -249,7 +249,7 @@ main .item {
 
 main img.icon {
     margin: 0 auto;
-    border-bottom-left-radius: 15px;
+    border-radius: 50%;
     height: 180px;
     width: 180px;
     border: solid 1px #555;
