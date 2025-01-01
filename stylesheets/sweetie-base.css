@@ -380,11 +380,12 @@ footer h2 {
     list-style-type: none;
     margin:0 auto;
     padding:1rem 0;
-    width:22rem;
+    /*width:22rem;*/
 }
 #social li {
     font-size:1.5rem;
     list-style-type: none;
+    margin:0 auto;
 }
 
 #social a {
